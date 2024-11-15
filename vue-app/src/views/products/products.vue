@@ -1,6 +1,6 @@
 <script>
 import { mapActions, mapGetters } from 'vuex';
-import ListHeader from '@/components/list-header.vue';
+import ListHeader from '../../components/list-header.vue';
 import ProductList from './product-list.vue';
 
 export default {

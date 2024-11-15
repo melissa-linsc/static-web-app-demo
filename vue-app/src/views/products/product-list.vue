@@ -1,5 +1,5 @@
 <script>
-import CardContent from '@/components/card-content.vue';
+import CardContent from '../../components/card-content.vue';
 
 const captains = console;
 
