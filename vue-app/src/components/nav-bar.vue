@@ -11,14 +11,13 @@
       <p class="menu-label">Auth</p>
       <div class="menu-list auth">
         <template v-if="!userInfo">
-          <template v-for="provider in providers">
+          <div v-for="provider in providers" :key="provider">
             <a
-              :key="provider"
               :href="`/.auth/login/${provider}?post_login_redirect_uri=${redirect}`"
             >
               {{ provider }}
             </a>
-          </template>
+          </div>
         </template>
         <a
           v-if="userInfo"
